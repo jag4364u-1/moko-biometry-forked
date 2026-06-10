@@ -19,4 +19,11 @@ dependencies {
     iosMainImplementation(libs.coroutines)
 
     commonMainApi(libs.mokoResources)
+
+    "androidUnitTestImplementation"("org.junit.jupiter:junit-jupiter:5.10.2")
+    "androidUnitTestImplementation"("io.mockk:mockk:1.13.10")
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
